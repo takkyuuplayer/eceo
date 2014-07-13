@@ -1,0 +1,9 @@
+{{ question.title }}
+<form role="form">
+  <div class="radio" ng-repeat="choice in question.choices">
+    <label>
+      <input type="radio" name="question" value="choice"> {{ choice }}
+    </label>
+  </div>
+  <button class="btn btn-primary">Submit</button>
+</form>

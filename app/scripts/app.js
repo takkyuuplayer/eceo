@@ -7,6 +7,10 @@ angular.module('eceoApp', ['ngRoute'])
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/sa', {
+        templateUrl: 'views/sa.html'
+        ,controller: 'SACtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
