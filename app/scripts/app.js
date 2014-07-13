@@ -1,6 +1,6 @@
 'use strict';
 
-var eceoApp = angular.module('eceoApp', [])
+angular.module('eceoApp', ['ngRoute'])
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider
       .when('/', {
