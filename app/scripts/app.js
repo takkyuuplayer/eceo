@@ -11,6 +11,10 @@ angular.module('eceoApp', ['ngRoute'])
         templateUrl: 'views/sa.html'
         ,controller: 'SACtrl'
       })
+      .when('/ma', {
+        templateUrl: 'views/ma.html'
+        ,controller: 'MACtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
