@@ -1,0 +1,9 @@
+{
+  "meta":{ "code": 200 }
+  ,"data":{
+    "type": "MA"
+    ,"title": "Choose all countries"
+    ,"choices": ["America", "Banana", "Canada", "Denmark"]
+    ,"answer": ["America", "Banana", "Denmark"]
+  }
+}

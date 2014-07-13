@@ -1,12 +1,9 @@
 'use strict';
 
 angular.module('eceoApp')
-.controller('MACtrl', function($scope) {
-  $scope.question = {
-    type: 'MA'
-    ,title: 'Choose all countries'
-    ,choices: ['America', 'Banana', 'Canada', 'Denmark']
-    ,answer: ['America', 'Banana', 'Denmark']
-  };
+.controller('MACtrl', function($scope, $http) {
+  $http.get('/questions/sample/ma.json').success(function(response) {
+    $scope.question = response.data;
+  });
 });
 

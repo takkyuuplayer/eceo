@@ -1,0 +1,13 @@
+{
+  "meta":{ "code": 200 }
+  ,"data":{
+    "title": "This is sample questions"
+    ,"description": "You can group questions like this"
+    ,"questions":[
+      "/questions/sample/sa.json"
+      ,"/questions/sample/ma.json"
+      ,"/questions/sample/freetext.json"
+      ,"/questions/sample/order.json"
+    ]
+  }
+}

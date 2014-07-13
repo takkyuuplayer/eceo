@@ -1,0 +1,9 @@
+{
+  "meta":{ "code": 200 }
+  ,"data":{
+    "type": "SA"
+    ,"title": "Choose correct word"
+    ,"choices": ["apple", "banana", "chocolate"]
+    ,"answer": ["apple"]
+  }
+}
