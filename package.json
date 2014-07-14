@@ -1,0 +1,29 @@
+{
+  "name": "eceo",
+  "version": "0.0.0",
+  "description": "eceo ====",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "karma": "^0.12.17"
+  },
+  "devDependencies": {
+    "karma-jasmine": "^0.1.5",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "phantomjs": "^1.9.7-14"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/takkyuuplayer/eceo.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/takkyuuplayer/eceo/issues"
+  },
+  "homepage": "https://github.com/takkyuuplayer/eceo"
+}
