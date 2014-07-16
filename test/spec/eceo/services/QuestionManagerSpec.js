@@ -31,7 +31,8 @@ describe('Service: QuestionManager', function() {
     {
       "meta":{ "code": 200 }
       ,"data":{
-        "type": "SA"
+        "path": "/questions/sample/sa.json"
+        ,"type": "SA"
         ,"title": "Choose correct word"
         ,"choices": ["apple", "banana", "chocolate"]
         ,"answer": ["apple"]
