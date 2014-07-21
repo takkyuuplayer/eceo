@@ -1,7 +1,7 @@
 <legend>Question Groups</legend>
 <ul class="list-unstyled">
   <li ng-repeat="group in resource.groups">
-  <a href="#" style="display:block" title="{{group.group.description}}">
+  <a href="#/group/{{$index}}/question/0" style="display:block" title="{{group.group.description}}">
     <div class="col-md-4">
     {{group.group.title}}
     ( / {{group.group.questions.length}})

@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('eceoApp')
-.controller('ResourceCtrl', function($scope, $http, $location, $rootScope) {
-  $rootScope.resource = {
+.controller('ResourceCtrl', function($scope, $http, $location) {
+  $scope.resource = {
     groups: []
     ,questions: []
     ,answerProgresses: []
@@ -14,7 +14,7 @@ angular.module('eceoApp')
       ,"href": $location.host() + "/questions/sample.json"
       ,"group": response.data
     };
-    $rootScope.resource.groups.push(group);
+    $scope.resource.groups.push(group);
 
     _.each(group.group.questions, function(path) {
       $http.get(path).success(function(response) {
@@ -23,7 +23,7 @@ angular.module('eceoApp')
           ,"path": path
           ,"question": response.data
         };
-        $rootScope.resource.questions.push(question);
+        $scope.resource.questions.push(question);
       });
     });
   });

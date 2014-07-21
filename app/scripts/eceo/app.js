@@ -7,6 +7,10 @@ angular.module('eceoApp', ['ngRoute'])
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/group/:groupIndex/question/:questionIndex', {
+        templateUrl: 'views/question.html'
+        ,controller: 'QuestionCtrl'
+      })
       .when('/sa', {
         templateUrl: 'views/sa.html'
         ,controller: 'SACtrl'
