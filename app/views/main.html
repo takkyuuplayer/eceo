@@ -1,4 +1,23 @@
-Test
-<div ng-repeat="thing in awesomeThings">
-  {{ thing }}
-</div>
+<legend>Question Groups</legend>
+<ul class="list-unstyled">
+  <li ng-repeat="group in resource.groups">
+  <a href="#" style="display:block" title="{{group.group.description}}">
+    <div class="col-md-4">
+    {{group.group.title}}
+    ( / {{group.group.questions.length}})
+    </div>
+    <div class="col-md-8">
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" style="width: 35%">
+        </div>
+        <div class="progress-bar progress-bar-warning" style="width: 20%">
+          <span class="sr-only">20% Complete (warning)</span>
+        </div>
+        <div class="progress-bar progress-bar-danger" style="width: 10%">
+          <span class="sr-only">10% Complete (danger)</span>
+        </div>
+      </div>
+    </div>
+  </a>
+  </li>
+</ul>
