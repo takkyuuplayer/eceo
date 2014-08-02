@@ -16,6 +16,8 @@
     "protractor": "^1.0.0"
   },
   "scripts": {
+    "postinstall": "node node_modules/bower/bin/bower install",
+    "pretest": "npm install",
     "test": "node node_modules/karma/bin/karma start test/karma.conf.js",
     "preupdate-webdriver": "npm install",
     "update-webdriver": "node node_modules/protractor/bin/webdriver-manager update",
